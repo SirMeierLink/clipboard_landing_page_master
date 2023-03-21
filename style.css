@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    /* Primary */
+    --strong-cyan: hsl(171, 66%, 44%);
+    --strong-cyan-light: hsla(171, 66%, 44%, 0.775);
+    --box-shadow-strong-cyan: hsl(171, 66%, 33%);
+    --box-shadow-light-strong-cyan: hsla(171, 66%, 33%, 0.767);
+
+    --light-blue: hsl(233, 100%, 69%);
+    --blue-light-light: hsl(233, 100%, 69%, 0.775);
+    --box-shadow-light-blue: hsl(233, 45%, 45%);
+    --box-shadow-light-light-blue: hsl(233, 45%, 45%, 0.767);
+
+    /* Neutral */
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    --footer-grayish-blue: hsl(212, 71%, 96%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 0;
+    background-image: url('./images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+main {
+    /* padding-top: 8rem; */
+    padding: 8rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6rem;
+    margin-bottom: 8rem;
+}
+
+/* Start -- Targeting all paragrahs */
+p {
+    color: var(--grayish-blue);
+    line-height: 2;
+}
+
+/* Start -- Targeting all paragrahs */
+
+h1,
+h2,
+h3 {
+    opacity: 0.7;
+}
+
+/* Start -- Targeting all images to be responsive */
+img[alt=computer],
+img[alt=devices] {
+    width: 100%;
+    min-width: 8rem;
+    object-fit: contain;
+}
+
+/* Start -- Targeting all images to be responsive */
+
+/* Start -- History of Everything */
+.history,
+.history--history-of-everything,
+.history--snippets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.history {
+    gap: 8rem;
+}
+
+.history--history-of-everything {
+    gap: 2rem;
+}
+
+.history--history-of-everything h1 {
+    font-size: 2.5rem;
+}
+
+.history--history-of-everything p {
+    max-width: 38rem;
+}
+
+.history--snippets h2 {
+    font-size: 2.2rem;
+}
+
+.history--snippets p {
+    max-width: 44rem;
+}
+
+/* End -- History of Everting*/
+
+/* Start -- Buttons */
+/* Start -- Targeting all buttons on page */
+.history--buttons,
+.mac-ios--buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.history--buttons button,
+.mac-ios--buttons button {
+    font-size: 1rem;
+    padding: 1em 3em;
+    border-radius: 2em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.history--buttons .ios,
+.mac-ios--buttons .ios {
+    background-color: var(--strong-cyan);
+    box-shadow: 0 2px 0 var(--box-shadow-strong-cyan);
+}
+
+.history--buttons .ios:hover,
+.mac-ios--buttons .ios:hover {
+    background-color: var(--strong-cyan-light);
+    box-shadow: 0 2px 0 var(--box-shadow-light-strong-cyan);
+}
+
+.history--buttons .mac,
+.mac-ios--buttons .mac {
+    background-color: var(--light-blue);
+    box-shadow: 0 2px 0 var(--box-shadow-light-blue);
+}
+
+.history--buttons .mac:hover,
+.mac-ios--buttons .mac:hover {
+    background-color: var(--blue-light-light);
+    box-shadow: 0 2px 0 var(--box-shadow-light-light-blue);
+}
+
+.flex-tracking {
+    display: flex;
+    gap: 6rem;
+    position: relative;
+    left: -9rem;
+}
+
+.flex-tracking--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 4rem 0;
+}
+
+.flex-tracking--info-box {
+    text-align: left;
+    max-width: 25rem;
+}
+
+.flex-tracking--info-box p {
+    margin-top: 0.5rem;
+}
+
+/* Start -- Supercharge Your Workflow */
+.workflow h2 {
+    font-size: 2.14rem;
+    margin-bottom: 1rem;
+}
+
+/* End -- Supercharge Your Workflow */
+
+/* Start -- Access Clipboard */
+.flex-clipboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+
+}
+
+.flex-clipboard--access p {
+    width: 100%;
+    max-width: 42rem;
+    margin-top: 1rem;
+}
+
+/* Start -- Access Clipboard */
+
+/* Start -- Customer's Info */
+.flex-customer-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flex-customer-info--info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    max-width: 22rem;
+    gap: 1rem;
+}
+
+.flex-customer-info--info-box p {
+    font-size: 1rem;
+}
+
+.flex-customer-info--info-box h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* End -- Customer's Info */
+
+.mac-ios {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 42rem;
+}
+
+/* Start -- Logos */
+.flex-company-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.flex-company-logos img {
+    width: 8rem;
+}
+
+/* End -- Logos */
+
+.mac-ios--text h2 {
+    margin-bottom: 1rem;
+}
+
+/* Start -- Footer */
+.flex-footer {
+    background-color: var(--footer-grayish-blue);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    height: 5rem;
+}
+
+.flex-footer div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+.flex-footer img {
+    width: 50px;
+}
+
+.flex-footer--footer-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+    gap: 1rem 4rem;
+}
+
+.flex-footer--footer-info p {
+    line-height: normal;
+}
+
+.flex-footer--footer-info p:hover {
+    cursor: pointer;
+    color: var(--strong-cyan);
+}
+
+.flex-footer--social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex-footer--social-icons i {
+    cursor: pointer;
+}
+
+.flex-footer--social-icons i:hover {
+    color: var(--strong-cyan);
+}
+
+/* End -- Footer */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        background-image: url('./images/bg-header-mobile.png');
+    }
+
+    .flex-tracking {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        align-items: center;
+        gap: 0;
+    }
+
+    .flex-tracking--info-box {
+        text-align: center;
+    }
+
+    .flex-footer {
+        flex-direction: column;
+        height: 100%;
+        gap: 3rem;
+    }
+
+    .flex-footer div:nth-child(1) {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .flex-footer p {
+        text-align: center;
+    }
+
+    .flex-footer--footer-info {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-company-logos {
+        flex-direction: column;
+    }
+
+    /* Start -- Targeting footer icons */
+    .fa-brands {
+        font-size: 1.8rem;
+    }
+
+    /* Start -- Targeting footer icons */
+
+    .history--buttons button,
+    .mac-ios--buttons button {
+        width: 100%;
+    }
+
+    .mac-ios--buttons {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    main {
+        padding-top: 7rem;
+    }
+
+    main img {
+        width: 5rem;
+    }
+
+    .history--history-of-everything h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 15px;
+        word-spacing: 2px;
+    }
+
+    .mac-ios--text h2 {
+        font-size: 2.5rem;
+    }
+}
